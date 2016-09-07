@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Check in:</strong>
+  <%= @excuse_card.check_in %>
+</p>
+
+<p>
+  <strong>Check out:</strong>
+  <%= @excuse_card.check_out %>
+</p>
+
+<p>
+  <strong>Excuse:</strong>
+  <%= @excuse_card.excuse_id %>
+</p>
+
+<%= link_to 'Edit', edit_excuse_card_path(@excuse_card) %> |
+<%= link_to 'Back', excuse_cards_path %>

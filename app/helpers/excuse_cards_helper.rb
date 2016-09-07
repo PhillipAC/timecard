@@ -1,0 +1,2 @@
+module ExcuseCardsHelper
+end

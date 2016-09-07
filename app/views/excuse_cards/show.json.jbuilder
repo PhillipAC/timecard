@@ -1,0 +1,1 @@
+json.partial! "excuse_cards/excuse_card", excuse_card: @excuse_card

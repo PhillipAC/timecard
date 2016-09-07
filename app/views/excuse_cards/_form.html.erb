@@ -1,0 +1,29 @@
+<%= form_for(@excuse_card) do |f| %>
+  <% if @excuse_card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@excuse_card.errors.count, "error") %> prohibited this excuse_card from being saved:</h2>
+
+      <ul>
+      <% @excuse_card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :check_in %><br>
+    <%= f.datetime_select :check_in %>
+  </div>
+  <div class="field">
+    <%= f.label :check_out %><br>
+    <%= f.datetime_select :check_out %>
+  </div>
+  <div class="field">
+    <%= f.label :excuse_id %><br>
+    <%= f.number_field :excuse_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
